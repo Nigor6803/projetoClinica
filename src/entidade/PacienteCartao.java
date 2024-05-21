@@ -27,6 +27,7 @@ public class PacienteCartao extends Paciente {
 		return getValorDaConsulta() + (getValorDaConsulta() * taxaDeServico/100);
 	}
 	
+	@Override
 	public String formaDePagamento() {
 		return "PACIENTE:"+getNome()
 				+ " - ESPECIALIZAÇÃO:"
